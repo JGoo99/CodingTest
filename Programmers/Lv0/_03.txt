@@ -1,0 +1,23 @@
+// 프로그래머스_코딩테스트입문_피자나눠먹기(2)
+
+// 나의 풀이
+
+class Solution {
+  public int solution(int slice, int n) {
+    int answer = 1;
+    int firstSlice = slice;
+    while (n > slice) {
+      slice += firstSlice;
+      answer++;
+    }
+    return answer;
+  }
+}
+
+// 좋은 답안 예시
+
+class Solution {
+  public int solution(int slice, int n) {
+    return n % slice > 0 ? n/slice+1 : n/slice;
+  }
+}
