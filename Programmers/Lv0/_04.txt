@@ -1,0 +1,11 @@
+// 프로그래머스_코딩테스트입문_피자나눠먹기(2)
+
+// 나의 풀이
+
+class Solution {
+  public double solution(int[] numbers) {
+    double answer = 0;
+    for (int i : numbers) { answer += i; }
+    return answer/numbers.length;
+  }
+}
