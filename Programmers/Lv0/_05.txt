@@ -1,5 +1,5 @@
 ## 프로그래머스_코딩기초트레이닝_커피심부름
-
+ 
 class Solution {
   public int solution(String[] order) {
     int latteNum = 0;
